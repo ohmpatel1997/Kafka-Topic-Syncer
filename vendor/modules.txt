@@ -1,0 +1,7 @@
+# github.com/confluentinc/confluent-kafka-go v1.5.2
+## explicit
+github.com/confluentinc/confluent-kafka-go/kafka
+github.com/confluentinc/confluent-kafka-go/kafka/librdkafka
+# gopkg.in/yaml.v2 v2.4.0
+## explicit
+gopkg.in/yaml.v2
