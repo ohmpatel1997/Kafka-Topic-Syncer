@@ -44,7 +44,7 @@ func (kc kafkaClient) UpdateConfiguration(configs *Config) error {
 		topicsAlreadyExist[t.Topic] = true
 	}
 
-	errChan := make(chan error, len(configs.Topics))
+	errChan := make(chan error, 2)
 	updateTopicChan := make(chan topic)
 	createTopicChan := make(chan topic)
 
