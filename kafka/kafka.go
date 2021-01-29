@@ -65,7 +65,7 @@ func (kc kafkaClient) UpdateConfiguration(configs *Config) error {
 	updateTopicErr := <-errChan
 	createTopicErr := <-errChan
 
-	if updateTopicChan != nil {
+	if updateTopicErr != nil {
 		return updateTopicErr
 	}
 	return createTopicErr
